@@ -1,0 +1,54 @@
+.padre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.padre>div {
+  height: 200px;
+  position: relative;
+}
+.uno {
+  background-color: yellow;
+}
+.dos {
+  background-color: green;
+}
+.tres{
+  background-color: red;
+}
+.square {
+  background-color: grey;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  right: 50%;
+  margin-right: -25px;
+}
+.three {
+  bottom: 0;
+}
+.two {
+  top:0;
+}
+.one{
+  top: 50%;
+  margin-top: -25px;
+}
+.padre>div::before {
+  content: "";
+  border: 4px dashed white;
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -54px;
+}
+.uno::before {
+  top:50%;
+  margin-top:-54px;
+}
+.dos::before {
+  top:0;
+}
+.tres::before {
+  bottom: 0;
+}
